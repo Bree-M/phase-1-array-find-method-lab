@@ -3,11 +3,11 @@ function superbowlWin(records) {
     return win ? win.Year : undefined;
 }
 
-const superbowlRecords = [
+const denverBroncosFootballTeam = [
 
     {Year:"2015", result:"W"},
     {Year: "2014" ,result:"N/A" },
     { Year: "2013", result: "L"},
 ];
 
-console.log(superbowlWin(superbowlRecords));
+console.log(superbowlWin(denverBroncosFootballTeam));
