@@ -1,6 +1,6 @@
 function superbowlWin(records) {
     let win = records.find(record => record.result === "W");
-    return win ? win.Year : undefined;
+    return win ? `Denver Broncos won the Super Bowl in ${win.Year}` : undefined;
 }
 
 const records = [
