@@ -1,6 +1,6 @@
 function superbowlWin(records) {
     let win = records.find(game => game.result === "W");
-    return win ? win.Year : undefined;
+    return win ? win.Year : "The School did not win!";
 }
 
 const records = [
