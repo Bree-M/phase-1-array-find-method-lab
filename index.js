@@ -1,11 +1,11 @@
 function superbowlWin(records) {
-    let win = records.find(game => game.result === "W");
-    return win ? win.Year : "The School did not win!";
+    let win = records.find(game => game.result === "Win");
+    return win ? win.Year : "undefined";
 }
 
 const records = [
 
-    {Year:"2015", result:"W"},
+    {Year:"2015", result:"Win"},
     {Year: "2014" ,result:"N/A" },
     { Year: "2013", result: "L"}
 ];
