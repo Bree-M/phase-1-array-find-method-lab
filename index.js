@@ -1,21 +1,22 @@
 function superbowlWin(records) {
-    let win = records.find(game => game.result === "W");
+    const win = records.find(game => game.result === "W");
     return win ? win.Year : undefined;
 }
 
-const records = [
+const superbowlRecords = [
 
-    {Year:2015, result: "W"},
-    {Year: 2014 ,result:"N/A" },
-    { Year: 2013, result: "L"}
+    {Year:2018, result: "L"},
+    {Year: 2019 ,result:"W" },
+    { Year: 2020, result: "L"}
 ];
 
-console.log(superbowlWin(records));
+console.log(superbowlWin(superbowlRecords));
 
 const noWinRecorded = [
-    { Year: 2014, result: "N/A"},
-    { Year: 2013, result: "L" }
+    { Year: 2018, result: "L"},
+    { Year: 2020, result: "L" }
 
 ];
 
 console.log(superbowlWin(noWinRecorded));
+
